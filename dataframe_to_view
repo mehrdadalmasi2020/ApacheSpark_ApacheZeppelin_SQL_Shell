@@ -1,2 +1,0 @@
-%spark
-DataFrame.createOrReplaceTempView("DF")
