@@ -9,6 +9,8 @@ that shows how you can use Scala and SQL to provide an analysis for end users.
 
 ![image](https://github.com/mehrdadalmasi2020/ApacheSpark_ApacheZeppelin_SQL_Shell/assets/74200693/b049297c-67cd-4254-a2d9-50c3cd527df8)
 
+![image](https://github.com/mehrdadalmasi2020/ApacheSpark_ApacheZeppelin_SQL_Shell/assets/74200693/65298a4a-325d-4f57-951b-75637408d211)
+
 
 
 
