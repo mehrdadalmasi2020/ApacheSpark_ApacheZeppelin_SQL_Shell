@@ -6,3 +6,9 @@ The visualisation power of Apache Zeppelin makes it a suitable substitution for 
 
 I wrote an article (https://medium.com/@mehrdad.al.2023/run-your-first-analysis-project-on-apache-zeppelin-using-scala-spark-shell-and-sql-e1b86a9fadd0)
 that shows how you can use Scala and SQL to provide an analysis for end users. 
+
+![image](https://github.com/mehrdadalmasi2020/ApacheSpark_ApacheZeppelin_SQL_Shell/assets/74200693/b049297c-67cd-4254-a2d9-50c3cd527df8)
+
+
+
+
