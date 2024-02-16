@@ -1,0 +1,310 @@
+﻿{
+  "paragraphs": [
+    {
+      "text": "%sh\ncd /home/devuser/\nls\n",
+      "user": "anonymous",
+      "dateUpdated": "2024-02-16T09:00:37+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sh",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1708013918386_1928366392",
+      "id": "paragraph_1708013918386_1928366392",
+      "dateCreated": "2024-02-15T16:18:38+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:284",
+      "dateFinished": "2024-02-16T09:00:37+0000",
+      "dateStarted": "2024-02-16T09:00:37+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "anaconda3\nAnaconda3-2023.03-1-Linux-x86_64.sh\nget-pip.py\nneo4j\npython3\nsnap\nspark-3.5.0-bin-hadoop3.tgz\nTest.csv\nzeppelin-0.10.1-bin-all\nzeppelin-0.10.1-bin-all.tgz\n"
+          }
+        ]
+      },
+      "focus": true
+    },
+    {
+      "text": "%spark\n\nval DataFrame = spark.read.format(\"CSV\").load(\"/home/devuser/Test.csv\")\nDataFrame.printSchema()\n",
+      "user": "anonymous",
+      "dateUpdated": "2024-02-16T09:23:55+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "root\n |-- _c0: string (nullable = true)\n |-- _c1: string (nullable = true)\n |-- _c2: string (nullable = true)\n |-- _c3: string (nullable = true)\n\n\u001b[1m\u001b[34mDataFrame\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [_c0: string, _c1: string ... 2 more fields]\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://duv-a118letterbox-nlp-6:4040/jobs/job?id=1",
+              "$$hashKey": "object:994"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1708013207955_107384272",
+      "id": "paragraph_1708013207955_107384272",
+      "dateCreated": "2024-02-15T16:06:47+0000",
+      "dateStarted": "2024-02-16T09:23:55+0000",
+      "dateFinished": "2024-02-16T09:23:55+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:281"
+    },
+    {
+      "text": "%spark\nDataFrame.createOrReplaceTempView(\"DF\")",
+      "user": "anonymous",
+      "dateUpdated": "2024-02-16T09:29:35+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1708075566917_1838431365",
+      "id": "paragraph_1708075566917_1838431365",
+      "dateCreated": "2024-02-16T09:26:06+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:1024",
+      "dateFinished": "2024-02-16T09:29:35+0000",
+      "dateStarted": "2024-02-16T09:29:35+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      }
+    },
+    {
+      "text": "%spark.sql\nselect * from DF",
+      "user": "anonymous",
+      "dateUpdated": "2024-02-16T09:36:25+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "pieChart",
+              "height": 300,
+              "optionOpen": true,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "_c0": "string",
+                      "_c1": "string",
+                      "_c2": "string",
+                      "_c3": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "pieChart": {}
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "_c0",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [
+                {
+                  "name": "_c0",
+                  "index": 0,
+                  "aggr": "sum"
+                },
+                {
+                  "name": "_c1",
+                  "index": 1,
+                  "aggr": "sum"
+                }
+              ],
+              "values": [
+                {
+                  "name": "_c1",
+                  "index": 1,
+                  "aggr": "count"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://duv-a118letterbox-nlp-6:4040/jobs/job?id=2",
+              "$$hashKey": "object:1829"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1708073973705_580714245",
+      "id": "paragraph_1708073973705_580714245",
+      "dateCreated": "2024-02-16T08:59:33+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:666",
+      "dateFinished": "2024-02-16T09:29:58+0000",
+      "dateStarted": "2024-02-16T09:29:58+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "_c0\t_c1\t_c2\t_c3\nColumn1\tColumn2\tColumn3\tDescription\nValue1\tValue2\tValue3\tDescription for row 1. It spans multiple lines and provides detailed information about the first entry in the CSV file.\nValue4\tValue5\tValue6\tDescription for row 2. This CSV file is structured with 4 columns. \nValue7\tValue8\tValue9\tDescription for row 3. CSV files are commonly used for storing tabular data. They are lightweight and easy to handle.\nValue10\tValue11\tValue12\tDescription for row 4. Each row in a CSV file is terminated by a newline character, and values within each row are separated by commas. \nValue13\tValue14\tValue15\tDescription for row 5. CSV files can be created and edited using text editors or spreadsheet software. They are widely used for importing and exporting data between different systems.\nValue16\tValue17\tValue18\tDescription for row 6. CSV files support different data types, including text, numbers, and dates. They are a flexible and versatile format for storing structured data.\nValue19\tValue20\tValue21\tDescription for row 7. This CSV file contains 20 rows, as requested. Each row has its own unique description, providing context and information about the corresponding entry.\nValue22\tValue23\tValue24\tDescription for row 8. CSV files are often used in data analysis, data migration, and data exchange between different software applications.\nValue25\tValue26\tValue27\tDescription for row 9. When working with CSV files, it's important to ensure data integrity and accuracy, especially when dealing with large datasets.\nValue28\tValue29\tValue30\tDescription for row 10. CSV files can be generated programmatically using various programming languages such as Python, Java, and JavaScript.\nValue31\tValue32\tValue33\tDescription for row 11. There are libraries and modules available for reading and writing CSV files in most programming languages, making it easy to work with CSV data.\nValue34\tValue35\tValue36\tDescription for row 12. In addition to text editors and spreadsheet software, there are specialized tools and utilities designed for working with CSV files.\nValue37\tValue38\tValue39\tDescription for row 13. CSV files are supported by many database management systems, allowing for easy import and export of data between databases and other applications.\nValue40\tValue41\tValue42\tDescription for row 14. This CSV file demonstrates various features and capabilities of the CSV format, including multiline descriptions and comma-separated values.\nValue43\tValue44\tValue45\tDescription for row 15. The CSV format has been standardized by RFC 4180, which defines the format and rules for creating valid CSV files.\nValue46\tValue47\tValue48\tDescription for row 16. Despite its simplicity, the CSV format is widely used and accepted in many industries and applications for data storage and exchange.\nValue49\tValue50\tValue51\tDescription for row 17. CSV files are human-readable and can be easily edited using a text editor. This makes them a popular choice for storing and sharing data.\nValue52\tValue53\tValue54\tDescription for row 18. CSV files can be opened and edited in spreadsheet software such as Microsoft Excel, Google Sheets, and LibreOffice Calc.\nValue55\tValue56\tValue57\tDescription for row 19. CSV files can also be imported into databases and used as a source for generating reports, charts, and visualizations.\nValue58\tValue59\tValue60\tDescription for row 20. This CSV file serves as an example of how to structure and organize data in a tabular format using the CSV format.\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%sh\n",
+      "user": "anonymous",
+      "dateUpdated": "2024-02-16T09:09:38+0000",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "editorMode": "ace/mode/sh"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1708074578462_1337506883",
+      "id": "paragraph_1708074578462_1337506883",
+      "dateCreated": "2024-02-16T09:09:38+0000",
+      "status": "READY",
+      "focus": true,
+      "$$hashKey": "object:829"
+    }
+  ],
+  "name": "Project1",
+  "id": "2JSM3BE71",
+  "defaultInterpreterGroup": "spark",
+  "version": "0.10.1",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {},
+  "config": {
+    "isZeppelinNotebookCronEnable": false,
+    "looknfeel": "default",
+    "personalizedMode": "false"
+  },
+  "info": {},
+  "path": "/Project1"
+}
